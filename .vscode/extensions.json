@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "mikestead.dotenv",
+    "csstools.postcss",
+    "bradlc.vscode-tailwindcss",
+    "vitest.explorer",
+    "yoavbls.pretty-ts-errors",
+    "stivo.tailwind-fold",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

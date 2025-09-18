@@ -1,0 +1,75 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.1/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "css": {
+    "formatter": { "enabled": false },
+    "linter": { "enabled": false }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "attributePosition": "auto"
+    }
+  },
+  "linter": {
+    "includes": [
+      "**/*.{ts,tsx,js,jsx,json,jsonc,css,scss,md,mdx,yaml}",
+      "!.lintstagedrc.js",
+      "!public/mockServiceWorker.js",
+      "!globals.css"
+    ],
+    "domains": {
+      "next": "recommended",
+      "react": "recommended",
+      "test": "recommended"
+    },
+    "rules": {
+      "a11y": {
+        "noStaticElementInteractions": "off",
+        "noSvgWithoutTitle": "off",
+        "useKeyWithClickEvents": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "correctness": {
+        "useImportExtensions": {
+          "options": {
+            "forceJsExtensions": true
+          }
+        }
+      },
+      "nursery": {
+        "useSortedClasses": "error"
+      },
+      "performance": {
+        "useTopLevelRegex": "off"
+      },
+      "style": {
+        "useNodejsImportProtocol": "off",
+        "useBlockStatements": "off",
+        "noNonNullAssertion": "off",
+        "useConsistentMemberAccessibility": "off",
+        "useDefaultParameterLast": "off"
+      },
+      "suspicious": {
+        "noConsole": "warn",
+        "useAwait": "off",
+        "noEmptyBlockStatements": "off",
+        "noDocumentCookie": "off"
+      }
+    }
+  }
+}
